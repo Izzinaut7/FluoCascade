@@ -5,8 +5,6 @@
 #####################
 # file parameters:
 
-datadir = "/data-zmk/basic-res-shared/tomo/Katrein/3rd_paper_DAMAGE/IVO_SIMULATION/ALLE_DATEN/secondary_emission"
-
 # put data somewhere temporarilly
 # must have this directory before starting the main.py
 datadir= "../../data"
@@ -17,6 +15,9 @@ appname="abs_09"
 simappname1="sec_abs_001"  # loads the data from raytracing simulation, old version
 simappname2="abs_08"      # loads the data we calculated in a previous run. If we didn't calculate anythiong, set this to appname
 
+
+########################################33
+# Calculation parameters
 
 # V is for Voxel
 Vsize=2E-7               #  m - I'd like 10nm, but no computer is going ot make it

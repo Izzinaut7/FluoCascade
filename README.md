@@ -16,6 +16,15 @@ After calculating the number of absorbed photons, it calculates the number of ph
 Output:
 the generated fields are exported into npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and save_txy.py.
 
+Note: save_txt does not work yet.
+
+# Input parameters: 
 parameters.py is used to modify the calculation parameters, as well as the data directory. 
 
-Note: save_txt does not work yet.
+Important: data directory must exist before starting the simulation.
+
+
+
+
+
+

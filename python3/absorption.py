@@ -27,6 +27,11 @@ from parameters import *
 
 # just joining the file names...
 appname="{}/{}".format(datadir,appname)
+
+# the stuff with simappnames is htat this version is still able to load some test-version output. This is going to be removed
+simappname1="sec_abs_001"  # loads the data from raytracing simulation, old version
+simappname2=simappname      # loads the data we calculated in a previous run. If we didn't calculate anythiong, set this to appname
+
 simappname1="{}/{}".format(datadir,simappname1)
 simappname2="{}/{}".format(datadir,simappname2)
 
