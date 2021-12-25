@@ -7,7 +7,7 @@ Calculate the secondary fluorescence in bone segment during the radiation with X
 
 The code is not intended to be used on other problems, although I plan to do it in some later version. Specific properties of the material in question, namely dry bone are deeply hard-coded in the scripts. 
 
-# Files inthe repository:
+# Files in the repository:
 
 Elements.hdf
 Data file I collected from DABAX tables, mostly used for the scattering cross sections. The use of this is deprecated, and the next version is going to use xraylib module instead of this. (https://github.com/tschoonj/xraylib)
@@ -18,9 +18,9 @@ After calculating the number of absorbed photons, it calculates the number of ph
 Output:
 the generated fields are exported into npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and save_txy.py.
 
-Note: save_txt does not work yet.
+Note: save_txt.py does not work yet.
 
-# Input parameters: 
+# Input Parameters: 
 parameters.py is used to modify the calculation parameters, as well as the data directory. 
 
 Important: data directory must exist before starting the simulation.
@@ -40,8 +40,7 @@ Edit other calcualtion parameters in the "parameters.py"
 
 In a terminal (Anaconda Prompt in Windows) change to the directory where the python code is
 
-Start the calculateion by typing
-python3 absorption.py
+Start the calculateion by typing "python3 absorption.py"
 
 (in Anaconda you should be in an active Python 3 environment, and be able to type "python absorption.py" without explicitely typing the version)
 
