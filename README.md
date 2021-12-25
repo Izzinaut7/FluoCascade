@@ -30,7 +30,7 @@ Program is tested with
 Debian linux, Python 3.7
 Windows10, Anaconda3, Python 3.8
 
-# Installation Instructions
+# Installation and Running
 
 Download the code from the repository
 
