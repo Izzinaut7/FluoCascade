@@ -2,22 +2,31 @@
 # this is the cheap way to edit parameters without entering variables in the main python code.
 # made to be imported in the main.py 
 
-#####################
-# file parameters:
+############################################
+#
+#       File parameters
+#
+#############################################
 
-# put data somewhere temporarilly
-# must have this directory before starting the main.py
+# put data in a directory
+# the directory name can be relative or absolute path somewhere on Your computer
+# This directory must exist before starting the absorption.py
 datadir= "../../data"
+
 
 # following variables are used to construct the name for the data files, so we can find and analyze them later:
 appname="abs_09"
-#simappname1="in_src_001"   # loads the data from raytracing simulation
-simappname1="sec_abs_001"  # loads the data from raytracing simulation, old version
-simappname2="abs_08"      # loads the data we calculated in a previous run. If we didn't calculate anythiong, set this to appname
 
 
-########################################33
+# some data can be reused, especially the transmission of the different fluorescence lines through the sample_thickness
+# since this takes long, we can reuse it by referencing the previous calculation here:
+simappname="abs_08"
+
+#############################################
+#
 # Calculation parameters
+#
+#############################################
 
 # V is for Voxel
 Vsize=2E-7               #  m - I'd like 10nm, but no computer is going ot make it
@@ -31,6 +40,12 @@ box_Z_size = 17.0E-6 # 35 mu
 
 I0=20334375 # photon/s - flux, beam intensity
 
+
+#############################################
+#
+#       Material parameters
+#
+#############################################
 
 elements=["Ca", "P", "O", "N", "C"]
 
