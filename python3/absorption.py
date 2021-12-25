@@ -385,6 +385,7 @@ def test():
     # circle
     beam_profile=np.where(ys*ys+zs*zs<beam_dia*beam_dia/4.0,1.0, 0.0)
     # gaussian blur
+    # the blur is just to soften the juggy edge of the primary beam circle
     #TODO release this at the end
     GaussBlurSigma=2
     beam_profile=ndimage.gaussian_filter(beam_profile, sigma=GaussBlurSigma)

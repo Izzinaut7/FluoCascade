@@ -29,8 +29,9 @@ simappname="abs_08"
 #############################################
 
 # V is for Voxel
-Vsize=2E-7               #  m - I'd like 10nm, but no computer is going ot make it
+# Vsize=2E-7               #  m - I'd like 10nm, but no computer is going ot make it
 
+# Only for the test: 
 #to test the code in a fast run, use larger voxel size, but take care that it is not larger than the box
 Vsize=2E-6
 
@@ -62,8 +63,10 @@ elements=["Ca", "P", "O", "N", "C"]
 
 
 # TODO should use the database for this!
-# but then I have several lines and all the proportionality factors...
-# here I just assume that there is no K-beta, everything goes into one channel
+# TODO use xraylib for this and for atomic scattering factors!
+#      but then I would have several fluorescence lines for each edge and all the proportionality factors...
+#      here I just assume that there is no K-beta, everything goes into one channel. Makes the liee easier...
+
 fluorescence_E={
     "C":277,
     "N":392,
@@ -80,6 +83,7 @@ fluorescence_yield_K={
     "Ca":0.1687
 }
 
+# TODO: use all available lines in the cascade
 # fluorescence Yield for Ca for L1 and L3 lines is:
 # Shell  Yield     
 # K   1.687e-01 
