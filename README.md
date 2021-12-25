@@ -26,6 +26,24 @@ parameters.py is used to modify the calculation parameters, as well as the data 
 Important: data directory must exist before starting the simulation.
 
 For further description read the comments in the parameters.py
+Program is tested with 
+Debian linux, Python 3.7
+Windows10, Anaconda3, Python 3.8
+
+# Installation Instructions
+
+Download the code from the repository
+
+Create a directory for the results and assign the location to the ddatadir variable in "parameters.py"
+
+Edit other calcualtion parameters in the "parameters.py"
+
+In a terminal (Anaconda Prompt in Windows) change to the directory where the python code is
+
+Start the calculateion by typing
+python3 absorption.py
+
+(in Anaconda you should be in an active Python 3 environment, and be able to type "python absorption.py" without explicitely typing the version)
 
 
 
