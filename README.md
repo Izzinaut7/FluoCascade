@@ -20,8 +20,7 @@ After calculating the number of absorbed photons, it calculates the number of ph
 Read the output from the calcualtion and plot several png files with the 
 
 Output:
-the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and **save_txt.py** .
-
+the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and **save_txt.py**.  
 Note: *save_txt.py* does not work yet.
 
 ## Input Parameters: 
@@ -47,7 +46,7 @@ Program is tested with
 - In a terminal (Anaconda Prompt in Windows) change to the directory where the python code is
 
 - Start the calculateion by typing :  
-`python3 absorption.py`. 
+`python3 absorption.py`
 
 (in Anaconda you should be in an active Python 3 environment, and be able to type "python absorption.py" without explicitely typing the version)
 
