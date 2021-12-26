@@ -1,4 +1,5 @@
 # FluoCascade
+
 One-time written Pyhon calculation of the fuorescence cascades in a bone to estimate the bone damage in some special cases.
 
 Purpose:
@@ -15,12 +16,16 @@ Data file I collected from DABAX tables, mostly used for the scattering cross se
 **absorption.py**
 After calculating the number of absorbed photons, it calculates the number of photons absorbed by all elements in the voxel, as well as the total ammount of the fluorescence photons originating rom the voxel. 
 
+**plot_abs.py**
+Read the output from the calcualtion and plot several png files with the 
+
 Output:
-the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and *save_txt.py* .
+the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and **save_txt.py** .
 
 Note: *save_txt.py* does not work yet.
 
 ## Input Parameters: 
+
 parameters.py is used to modify the calculation parameters, as well as the data directory. 
 
 Important: data directory must exist before starting the simulation.
@@ -40,6 +45,6 @@ Windows10, Anaconda3, Python 3.8
 
 - In a terminal (Anaconda Prompt in Windows) change to the directory where the python code is
 
-- Start the calculateion by typing "python3 absorption.py". 
+- Start the calculateion by typing 'python3 absorption.py'. 
 (in Anaconda you should be in an active Python 3 environment, and be able to type "python absorption.py" without explicitely typing the version)
 
