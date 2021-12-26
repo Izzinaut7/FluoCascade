@@ -16,7 +16,7 @@ Data file I collected from DABAX tables, mostly used for the scattering cross se
 After calculating the number of absorbed photons, it calculates the number of photons absorbed by all elements in the voxel, as well as the total ammount of the fluorescence photons originating rom the voxel. 
 
 Output:
-the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and save_txy.py.
+the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and *save_txt.py* .
 
 Note: *save_txt.py* does not work yet.
 
