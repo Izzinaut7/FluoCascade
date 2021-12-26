@@ -47,7 +47,7 @@ Program is tested with
 - In a terminal (Anaconda Prompt in Windows) change to the directory where the python code is
 
 - Start the calculateion by typing :  
-'python3 absorption.py'. 
+`python3 absorption.py`. 
 
 (in Anaconda you should be in an active Python 3 environment, and be able to type "python absorption.py" without explicitely typing the version)
 
