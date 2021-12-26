@@ -7,20 +7,20 @@ Calculate the secondary fluorescence in bone segment during the radiation with X
 
 The code is not intended to be used on other problems, although I plan to do it in some later version. Specific properties of the material in question, namely dry bone are deeply hard-coded in the scripts. 
 
-# Files in the repository:
+## Files in the repository:
 
-Elements.hdf
+**Elements.hdf**
 Data file I collected from DABAX tables, mostly used for the scattering cross sections. The use of this is deprecated, and the next version is going to use xraylib module instead of this. (https://github.com/tschoonj/xraylib)
 
-absorption.py
+**absorption.py**
 After calculating the number of absorbed photons, it calculates the number of photons absorbed by all elements in the voxel, as well as the total ammount of the fluorescence photons originating rom the voxel. 
 
 Output:
-the generated fields are exported into npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and save_txy.py.
+the generated fields are exported into *.npz file format, the NumPy compressed arrays. To examine these arrays use plot.py and save_txy.py.
 
-Note: save_txt.py does not work yet.
+Note: *save_txt.py* does not work yet.
 
-# Input Parameters: 
+## Input Parameters: 
 parameters.py is used to modify the calculation parameters, as well as the data directory. 
 
 Important: data directory must exist before starting the simulation.
@@ -30,7 +30,7 @@ Program is tested with
 Debian linux, Python 3.7
 Windows10, Anaconda3, Python 3.8
 
-# Installation and Running
+## Installation and Running
 
 - Download the code from the repository
 
